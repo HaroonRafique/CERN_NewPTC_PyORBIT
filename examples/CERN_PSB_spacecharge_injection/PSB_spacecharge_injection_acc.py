@@ -54,6 +54,12 @@ from lib.output_dictionary import *
 
 print "Start ..."
 
+def file_len(filein):
+	count = 0 
+	for line in open(filein).xreadlines(  ): count+=1
+	print count, 'lines in ', filein
+	return count
+
 #----------------------------------------------
 # Create folder structure
 #----------------------------------------------
